@@ -1,0 +1,15 @@
+--- This file is part of LuaDist project
+
+name = "luacurl"
+version = "0.2"
+
+desc = "Binding to libcurl, for getting or sending files from URLs.  This aims to be a full-fledged binding (easy/multi/share interface), not just easy like in luacurl."
+author = "Jürgen Hötzel"
+license = "MIT/X11"
+url = "https://github.com/LuaDist/Lua-cURL"
+maintainer = "David Manura"
+
+depends = {
+	"lua ~> 5.1",
+	"curl"
+}
