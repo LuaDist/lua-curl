@@ -1,0 +1,41 @@
+type = "x86_64"
+arch = "Ubuntu"
+author = "Juergen Hoetzel"
+depends = {
+[[lua ~> 5.1]],
+[[curl]],
+}
+
+desc = "Binding to libcurl, for getting or sending files from URLs.  This aims to be a full-fledged binding (easy/multi/share interface), not just easy like in luacurl."
+version = "0.2"
+maintainer = "David Manura"
+files = {
+Runtime = {
+[[lib/lua/cURL.so]],
+}
+,
+Documentation = {
+[[share/lua-curl/doc/api.rst]],
+}
+,
+Data = {
+[[share/lua-curl/TODO]],
+[[share/lua-curl/COPYING]],
+}
+,
+Example = {
+[[share/lua-curl/example//examples/muti.lua]],
+[[share/lua-curl/example//examples/keystore2pem.sh]],
+[[share/lua-curl/example//examples/file.lua]],
+[[share/lua-curl/example//examples/rss.lua]],
+[[share/lua-curl/example//examples/post.lua]],
+[[share/lua-curl/example//examples/ebaylogin.lua]],
+[[share/lua-curl/example//examples/ftpupload.lua]],
+[[share/lua-curl/example//examples/share.lua]],
+}
+,
+}
+
+license = "MIT/X11"
+name = "lua-curl"
+url = "https://github.com/msva/lua-curl"
